@@ -1,0 +1,11 @@
+# client
+client/node_modules
+client/package-lock.json
+client/eslint.config.js
+
+# server
+/server/node_modules
+/server/package-lock.json
+/server/node_modules/.package-lock.json
+/server/.env
+/node_modules
