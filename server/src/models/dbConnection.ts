@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 export { pool } from "./pgPool.js";
 
-
 export async function connectDBs() {
   await connectMongo();
   console.log("PostgresqlDB connected");

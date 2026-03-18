@@ -25,8 +25,7 @@ export default function Basket() {
 
     webhookEventSource.onmessage = (e) => {
       const newRequest = JSON.parse(e.data);
-      console.log(newRequest);
-      setRequests([...requests, newRequest]);
+      setRequests(prev => [...prev, newRequest]);
     }
 
     return webhookEventSource;
